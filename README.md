@@ -11,7 +11,14 @@ This template is adapted from the template given in SFU CMPT470 course, by [Greg
 2. `vagrant ssh`
 3. `cd project & express --view=pug app`  
 
-After that, when you add any dependencies, add them in the recipe(default.rb) too.
+### Use this as a template for another repo:
+1. `cd` to your repo.
+2. `git remote add template git@github.com:yzzhang-cs/expressjs_vagrant_template.git`
+3. `git fetch template`
+4. `git checkout master`
+5. `git merge template/master --allow-unrelated-histories`
+
+After these steps, when you add any dependencies, add them in the recipe(default.rb) too.
 
 ### Development:
 1. `vagrant up` to boot up the VM.
